@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #000;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  max-width: 1440px;
+  margin: auto;
+}
+
+#modul {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modul_content {
+  margin-left: 1rem;
+  width: 35%;
+}
+
+.modul_content-header {
+  font-size: 42px;
+  margin: 1rem 0;
+}
+
+.modul_content-paragraph {
+  font-size: 18px;
+  margin: 1rem 0;
+}
+
+.modul_content-button {
+  font-size: 20px;
+  margin: 1rem 0;
+  border-radius: 45px;
+  padding: 16px 40px;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #e4c1ae;
+}
+
+.modul_content-button:hover {
+  background-color: #228b22;
+}
+/*# sourceMappingURL=main.css.map */
