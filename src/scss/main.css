@@ -13,6 +13,8 @@
 
 .display {
   display: none;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
 body {
@@ -151,6 +153,8 @@ body {
   padding: 10px 20px;
   border-radius: 45px;
   margin-top: 5px;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
 .modul_alert-resetButton:hover {
