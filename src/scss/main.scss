@@ -24,6 +24,15 @@ body {
   align-items: center;
 }
 
+.modul_image {
+  &-tablet {
+    display: none;
+  }
+  &-mobile {
+    display: none;
+  }
+}
+
 .modul_content {
   margin-left: 1rem;
   width: 35%;
@@ -47,6 +56,60 @@ body {
     background-color: #e4c1ae;
     &:hover {
       background-color: #228b22;
+    }
+  }
+}
+
+@media screen and (max-width: 1251px) {
+  body {
+    #modul {
+      width: 90%;
+      justify-content: space-around;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    display: row;
+    #modul {
+      width: 90%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .modul_image {
+        &-computer {
+          display: none;
+        }
+        &-tablet {
+          display: block;
+        }
+      }
+
+      .modul_content {
+        width: 70%;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 501px) {
+  body {
+    #modul {
+      .modul_image {
+        &-computer {
+          display: none;
+        }
+        &-tablet {
+          display: none;
+        }
+        &-mobile {
+          display: block;
+        }
+      }
     }
   }
 }
