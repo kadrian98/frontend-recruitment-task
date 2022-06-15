@@ -42,15 +42,6 @@ body {
     justify-content: center;
     align-items: center;
   }
-
-  &_alert-close {
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 1rem;
-    font-size: 24px;
-  }
 }
 
 .modul_image {
@@ -101,13 +92,18 @@ body {
   &-message {
     font-size: 18px;
   }
-  &-close {
+  &-exit {
     cursor: pointer;
     position: absolute;
     top: 0;
     right: 0;
     margin: 1rem;
     font-size: 24px;
+    transition: 0.5s;
+    &:hover {
+      margin: 0.5rem;
+      font-size: 36px;
+    }
   }
   &-resetButton {
     font-size: 18px;
@@ -175,6 +171,9 @@ body {
         &-mobile {
           display: block;
         }
+      }
+      .modul_content {
+        width: 90%;
       }
     }
     .modul_alert {
