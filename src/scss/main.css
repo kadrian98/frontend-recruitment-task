@@ -68,15 +68,6 @@ body {
           align-items: center;
 }
 
-#modul_alert-close {
-  cursor: pointer;
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 1rem;
-  font-size: 24px;
-}
-
 .modul_image-tablet {
   display: none;
 }
@@ -133,13 +124,20 @@ body {
   font-size: 18px;
 }
 
-.modul_alert-close {
+.modul_alert-exit {
   cursor: pointer;
   position: absolute;
   top: 0;
   right: 0;
   margin: 1rem;
   font-size: 24px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.modul_alert-exit:hover {
+  margin: 0.5rem;
+  font-size: 36px;
 }
 
 .modul_alert-resetButton {
