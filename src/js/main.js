@@ -3,6 +3,7 @@ const closeSymbol = document.querySelector("#modul_alert-close");
 const alertText = document.querySelector(".modul_alert-message");
 const alertBackground = document.querySelector("#modul_alert-box");
 const resetBtn = document.querySelector(".modul_alert-resetButton");
+const modulAlert = document.querySelector(".modul_alert");
 
 let counter = 0;
 
@@ -25,5 +26,10 @@ mainButton.addEventListener("click", () => {
 
 closeSymbol.addEventListener("click", () => {
   alertBackground.classList.remove("active");
+  alertBackground.classList.add("display");
+});
+
+alertBackground.addEventListener("click", e => {
+  if (e.target.closest(".modul_alert")) return;
   alertBackground.classList.add("display");
 });
