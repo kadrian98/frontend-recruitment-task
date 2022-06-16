@@ -7,6 +7,26 @@ const modulAlert = document.querySelector(".modul_alert");
 
 let counter = 0;
 
+mainButton.addEventListener("click", () => {
+  openModal();
+  counter = counter + 1;
+  updateModalContent();
+
+  if (counter > 5) {
+    showResetButton();
+  }
+});
+
+resetBtn.addEventListener("click", () => {
+  counter = 0;
+  hideResetButton();
+  updateModalContent();
+});
+
+closeSymbol.addEventListener("click", closeModal);
+
+modalBackground.addEventListener("click", closeModal);
+
 function updateModalContent() {
   alertText.textContent = `You have clicked ${counter} times to related button`;
 }
@@ -22,21 +42,10 @@ function closeModal() {
   modalBackground.classList.add("hidden");
 }
 
-mainButton.addEventListener("click", () => {
-  openModal();
-  counter++;
-  updateModalContent();
+function hideResetButton() {
+  resetBtn.classList.add("hidden");
+}
 
-  if (counter > 5) {
-    resetBtn.classList.remove("hidden");
-    resetBtn.addEventListener("click", () => {
-      counter = 0;
-      resetBtn.classList.add("hidden");
-      updateModalContent();
-    });
-  }
-});
-
-closeSymbol.addEventListener("click", closeModal);
-
-modalBackground.addEventListener("click", closeModal);
+function showResetButton() {
+  resetBtn.classList.remove("hidden");
+}
