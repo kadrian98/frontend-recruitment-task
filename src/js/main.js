@@ -34,7 +34,10 @@ resetBtn.addEventListener("click", () => {
 
 closeSymbol.addEventListener("click", closeModal);
 
-modalBackground.addEventListener("click", closeModal);
+modalBackground.addEventListener("click", e => {
+  if (e.target.closest(".modul_alert")) return;
+  modalBackground.classList.add("display");
+});
 
 function getCounterValue() {
   const counter = localStorage.getItem("counter");
