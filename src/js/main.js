@@ -16,6 +16,12 @@ window.onload = () => {
   }
 };
 
+window.addEventListener("keydown", () => {
+  if (event.keyCode == "27") {
+    closeModal();
+  }
+});
+
 mainButton.addEventListener("click", () => {
   openModal();
   setCounterValue(getCounterValue() + 1);
