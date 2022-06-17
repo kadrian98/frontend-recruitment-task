@@ -42,7 +42,7 @@ closeSymbol.addEventListener("click", closeModal);
 
 modalBackground.addEventListener("click", e => {
   if (e.target.closest(".modul_alert")) return;
-  modalBackground.classList.add("display");
+  modalBackground.classList.add("hidden");
 });
 
 function getCounterValue() {
